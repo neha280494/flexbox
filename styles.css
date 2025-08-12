@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-container{
+
+      color: #fff;
+  background-color: #5995DA;  /* Blue */
+  padding: 20px 0; 
+
+  display: flex;/* Turn our html div into a flex container*/
+  justify-content:center; /*aligns them in center instead of default left*/
+
+}
+
+.menu{
+
+      border: 1px solid #fff;
+  width: 900px;
+  display: flex; /* Turn our html div into a flex container*/
+  justify-content: space-around;/*adjusts to the width of the container*/
+}
+
+
+.links{
+
+    border: 1px solid white;
+    display: flex;
+    justify-content: flex-end;/*aligns the items to the right*/
+}
+
+.login {
+  margin-left: 20px;
+}
+.header-container {
+  color: #5995DA;
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* if there are more elements that how much can fit 
+  as per the width, it puts the extra element at the bottom and wraps
+  them in the container*/
+  flex-direction: row; /*diplays flex items horizontally*/
+  align-items: center;/*aligns the items in center rather than default left */
+}
+
+.photo-grid-item {
+  border: 1px solid #fff;
+  width: 300px;
+  height: 300px;
+}
+
+/*ordering the elements is useful when positioning the
+flex items. here we have switched the order of first and last
+item*/
+.first-item {
+  order: 1;
+}
+
+.last-item {
+  order: -1;
+}
+
+/* items in flex end are always aligned liniearly in one direction 
+and no margin and padding is aadding. add the margin explicitly 
+for the items will override the exiting margin/padding of the 
+flexbox*/
+.social,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+ /* Typically all the items are aligned to be of equal size in the
+flex contained. but if we want to resize the items we can use the 
+"flex" property*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer-item {
+  border: 1px solid #fff;
+  background-color: #D6E9FE;
+  height: 200px;
+  
+  flex: 1;
+}
+
+.footer-three {
+   
+  flex: 2; /*This items will flexbile and will adjust to the width
+  of the container*/
+}
+
+
+
+.footer-one,
+.footer-three {
+  background-color: #5995DA;
+  flex: initial;
+  /*Without that "flex: initial"; line, the flex: 1; 
+declaration would be inherited from the .footer-item rule, c
+ausing the width properties to be ignored. initial fixes this, 
+and we get a flexible layout that also contains fixed-width items. 
+When you resize the browser window, you’ll see that only the middle 
+box in the footer gets resized.*/
+  width: 300px;
+}
+
+
+.signup{
+
+    /*"auto" margin will eat up the extra space in a flex
+    container*/
+    margin-left: auto;
+}
