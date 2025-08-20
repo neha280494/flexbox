@@ -1,0 +1,195 @@
+
+body{
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    background: #1F2937;
+    color: white;
+    flex: 1;
+    border: 1px transparent;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+     
+}
+
+.header-tab{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+.signup-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+   
+    
+}
+
+.left-content-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+    gap: 15px;
+
+}
+
+.right-img-container
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex:1;
+
+}
+
+.list-links{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap : 15px
+}
+
+.second-container{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#image-list-title{
+
+   
+    text-align: center;
+}
+
+
+.content-img-list{
+
+    display: flex;
+    gap: 5px;
+  margin-left: 100px;
+  margin-right: 100px;
+
+    
+}
+
+#item_img{
+
+    text-align: center;
+    border: 1px transparent;
+    padding: 30px;
+    
+    
+   
+    
+
+}
+
+#img-set{
+
+    width: 100px;
+    height: 150px;
+}
+
+
+a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits the color from the parent element */
+}
+
+button{
+    background-color: #3882f6;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border: none;
+}
+
+
+
+.quote-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    align-content: center;
+    padding: 80px;
+    gap: 5px;
+}
+
+.quote{
+
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: lighter;
+}
+
+.author{
+    
+    margin-left: auto;
+}
+
+.blue-container{
+
+    background-color: #3882f6;
+    border: 1px transparent;
+    margin: 100px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.blue-container-left{
+
+    color: white;
+    font-size: 10px;
+}
+
+#bottom-button{
+
+    border: 1px solid white;
+}
+
+ul{
+
+    list-style-type: none;
+}
+
+ #signup-img{
+        
+    width: 500px;
+    height: 200px;
+
+    }
+
+.footer{
+
+    background: #1F2937;
+    text-align: center;
+}
